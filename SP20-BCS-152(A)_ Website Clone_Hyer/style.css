@@ -1,0 +1,732 @@
+
+
+body {
+  background-color: white;
+  margin: 0;
+    padding: 0;
+}
+#container {
+padding: 0;
+margin: 0;
+}
+.top-bar {
+  background-color: white;
+  width: 100%;
+  height: 90px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+
+}
+.top-bar .hyer-logo{
+  height: 70px;
+  width: 50%;
+  float: left; 
+  align-items: center;  
+  justify-content: center;
+  margin: 2px;
+}
+.top-bar .hyer-logo img{
+  padding-left: 25px;
+  height: 50px; 
+ 
+}
+.top-menu {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+ text-align: center;
+ justify-content:flex-end;
+ word-spacing: 5px;
+  float: right;
+  width: 45%;
+ 
+}
+.top-bar .top-menu span {
+ margin: 10px;
+ font-size: 20px;
+ font-weight: bold;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+align-items: flex-end;
+justify-content: flex-end;
+color: rgb(71, 68, 68);
+}
+.top-bar .top-menu span .fa{
+  font-size: 18px;
+  
+}
+.manu {
+  display: flex;
+  flex-direction: row; 
+  background-color:lightgray;
+  width: 100%;
+  height: 65px; 
+  color: rgb(54, 52, 52);
+  align-items: center; 
+  justify-content: flex-end;
+  text-align: center;
+ 
+}
+.manu ul{
+  margin: 5px;
+}
+.manu ul li {
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 30px;
+  font-family:'Avenir next',sans-serif !important;
+  line-height: 1.6em;
+}
+.manu ul li a{
+  color: rgb(54, 52, 52);
+  text-decoration: none;
+}
+
+
+.slider {
+    background-color: darkgray;
+    display: flex;
+    align-items: flex-start;
+}
+/* .carousel-caption h1{
+  font-size: 60px;
+  margin-bottom: 10px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.carousel-caption img{
+ justify-content: space-between;
+ margin: 30px;
+}
+.carousel-caption button{
+  justify-content: space-between;
+  margin: 20px;
+ } */
+.text1 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 70px;
+}
+.text1 p{
+font-size: 20px;
+font-weight: 100%;
+}
+.pic-1 {
+  border: 1px solid rgb(78, 77, 77);
+  color: rgb(243, 235, 235);
+  background-color: black;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.pic-1 .column
+{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 500px;
+  background-color: white;
+ 
+}
+.pic-1 .column img{
+  width:100%;
+  height: 500px;
+
+}
+.pic-1 .column1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+  height: 500px;
+  color: rgb(87, 85, 85);
+  padding-top: 5px;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+}
+.pic-1 .column1 h1{
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 80px;
+ }
+.pic-1 .column1 .img-col{
+  /* display: inline-block; */
+  position: relative;
+}
+.pic-1 .column1 .img-col ul{
+position: relative;
+direction: ltr;
+
+}
+.pic-1 .column1 .img-col ul li{
+  list-style: none;
+    position: relative;
+    cursor: pointer; 
+    display:flex ;
+    margin: 40px;
+    
+}
+.pic-1 .column1 .img-col ul li .text8{
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Avenir next',sans-serif; 
+}
+.pic-1 .column1 .img-col ul li .icon8{
+  
+  display: inline;
+  flex-basis: 20%;
+  
+}
+
+.pic-2 {
+  border: 1px solid rgb(78, 77, 77);
+  color: rgb(243, 235, 235);
+  background-color: rgb(252, 250, 250);
+  height: 500px;
+  
+}
+.pic-2 .column1s{
+  float: left;
+  width: 50%;
+  background-color:rgb(21, 138, 138);
+  height: 500px;
+  color: white;
+  align-items: left;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.pic-2 .colmn
+{
+  float: right;
+  width: 50%;
+  height: 500px;
+  background-color: white;
+}
+.pic-2 .colmn img{
+  width:100%;
+  height: 500px;
+
+}
+
+.pic-2 .column1s{
+  position: relative;
+}
+.pic-2 .column1s h1{
+ text-align: left;
+ padding-left: 80px;
+ padding-top: 40px;
+}
+.pic-2 .column1s .img-cols ul
+{
+  position: relative;
+  direction: ltr;
+}
+.pic-2 .column1s .img-cols ul li{
+ list-style: none;
+ display: flex;
+ position: relative;
+ cursor: pointer; 
+ margin: 40px;
+}
+.pic-2 .column1s .img-cols ul li .text8{
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Avenir next',sans-serif; 
+  letter-spacing: 1px;
+}
+.pic-2 .img-cols {
+ 
+  padding-left: 20px;
+}
+.pic-2 .column1s .img-cols ul li .icon8{
+  
+  display: inline;
+  flex-basis: 20%;
+  
+}
+.text21 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ margin-top: 80px;
+}
+.text21 img{
+  justify-content: space-between;
+  margin: 30px;
+}
+.text21 h2{
+  color: rgb(73, 68, 68);
+}
+.pic-3 {
+  width: 100%;
+  height: 300px;
+  box-shadow: 0px 0px 2px 1px grey;
+  background-image: url(frnds.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.pic-3 .icons1{
+  width:25%;
+}
+.pic-3 .icons2{
+  
+  width:25%;
+}
+.pic-3 .icons3{
+ 
+  width:25%;
+}
+.pic-3 .icons4{
+ 
+  width:25%;
+}
+.partners {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(82, 80, 80);
+}
+.partners .partner-pic{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  padding-left:20px;
+
+}
+
+
+.pic-4 {
+  width: 100%;
+  height: 500px;
+  box-shadow: 0px 0px 2px 1px grey;
+  background-image: url(frnd1.jpg);
+  background-size: cover;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.pic-4 h2{
+  margin: 50px;
+  padding-top: 50px;
+}
+.pic-4 p{
+  font-size: 20px;
+  font-weight: 100%;
+  padding: 20px;
+  }
+.logo {
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+  padding: 20px;
+}
+.logo img{
+  width: 440px;
+  height: 150px;
+}
+.pic-5 {
+
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ justify-content: space-between;
+ margin: 50px;
+}
+.pic-5 .sub5{
+  width: 400px;
+}
+.pic-5 .sub5 img{
+ width: 400px;
+ height: 250px;
+}
+.pic-5 .sub5 .sub-p{
+  
+  padding-left: 8px;
+  align-items: left;
+  margin-top: 20px;
+  color:grey;
+  font-size: 13px;
+}
+.pic-5 .sub5 .sub-h3{
+  color: rgb(110, 109, 109);
+  
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(238, 235, 235);
+  /* justify-content: space-between; */
+  width: 100%;
+
+}
+.main-footer .foo{
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  width: 20%;
+  height: 500px;
+  line-height: 2;
+
+ 
+}
+.main-footer .foo .fa{
+  justify-content: space-between;
+}
+.main-footer .foo .foo-h4{
+  color: rgb(85, 83, 83);
+  font-size: 18px;
+  padding-left: 30px;
+  text-align: left;
+  font-weight: 600px;
+  padding-bottom: 5px;
+
+}
+.main-footer .foo ul li{
+   list-style: none;
+   counter-reset: rgb(175, 172, 172);
+   word-spacing: 1px;
+   
+}
+.main-footer .foo ul li img{
+ width: 150px;
+ height: 50px;
+}
+
+.main-footer .copy-main
+{
+  background-color: rgb(238, 235, 235) ; 
+}
+
+.main-footer .copy-main .copy{
+  float: left;
+  width: 50%;
+}
+
+.main-footer .copy-main .copy-right{
+  float: right;
+  width: 50%;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+.diversity
+{
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 1.33333rem;
+    padding-left: 20px;
+ color: rgb(158, 154, 154);
+ font-size: 18px;
+ font-family:'Avenir next',sans-serif;
+ 
+}
+.diversity-main{
+  margin: 30px;
+}
+/* ------------------------------------------------------------------------ */
+.pic-9 {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 0px 2px 1px grey;
+  background-image: url(frnd1.jpg);
+  background-size: cover;
+  display: block;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+.pic-9 .p-9{
+  font-size: 25px;
+  padding: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  }
+
+  /* --------------------------------------------------------------- */
+  .text22 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   margin-top: 80px;
+  }
+  .text22 img{
+   height: 35px;
+   width: 50px;
+   color: grey;
+  }
+  .text22 .text22-p{
+    color: rgb(73, 68, 68);
+    font-size: 18px;
+    word-spacing: 1px;
+  }
+  /* ------------------------------------------------------------------ */
+  .logo1 {
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px;
+    
+  }
+  .logo1 img{
+    width: 400px;
+    height: 150px;
+  }
+  .logo1 .p-logo{
+    color: rgb(73, 68, 68);
+    font-size: 18px;
+    word-spacing: 1px;
+  }
+  /* ---------------------------------------------------------------- */
+  .pic-9 {
+    width: 100%;
+    height: 300px;
+    background-image: url(frnd1.jpg);
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+  }
+  .pic-9 .pic9-h2{
+   font-size: 80px;
+   padding-top: 60px;
+  }
+  /* -------------------------------------------------- */
+   .left-contact{
+    float: left;
+    width: 50%;
+  }
+  .left-contact h5{
+   margin-left: 50px;
+  }
+  .left-contact ul li{
+    list-style: none;
+  }
+ .left-contact ul li .icon{
+    display: inline-block;
+    font-size: 30px;
+    color: grey;
+    width: 30px;
+    margin-left:20px ;
+
+}
+  .right-contact{
+    float: right;
+    width: 50%;
+    display: inline;
+  }
+  .foot-icon
+  {
+    width:100%;
+    justify-content: space-between;
+  }
+  .foot-icon ul li .icon1{
+    display: inline;
+    font-size: 25px;
+    color: grey;
+    width: 30px;  
+
+}
+/* ------------------------------------------------------ */
+.slider {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 0px 2px 1px grey;
+  background-image: url(frnd1.jpg);
+  background-size: cover;
+  display: block;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  }
+  .slider-main {
+    width: 100%;
+    height: 700px;
+    box-shadow: 0px 0px 2px 1px grey;
+    background-image: url(frnd1.jpg);
+    background-size: cover;
+    display: block;
+    color: white;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    line-height: 7;
+    padding-left: 50px ;
+    }
+    .slider-main img{
+     padding-right: 60px;
+     
+    }
+.slider-main .s-h1{
+  padding-top: 100px;
+  font-weight: 600;
+  font-size: 4rem;
+  }
+  .slider .s-h1{
+    line-height: 1.2em;
+    padding-top: 250px;
+    font-weight: 600;
+    font-size: 4rem;
+    }
+  .slider .s-h2{
+    line-height: 1.2em;
+    padding-top: 170px;
+    padding-left: 40px;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: left;
+  }
+
+/* ------------------------------------------------------ */
+Add a black background color to the top navigation
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

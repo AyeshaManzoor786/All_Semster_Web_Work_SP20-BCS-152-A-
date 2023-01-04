@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid+Quries</title>
+    <style>
+      @media only screen and (max-width: 300px) {
+        body {
+          background-color: red;
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section aside"
+            "footer footer footer footer";
+        }
+      }
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        body {
+          background-color: green;
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section aside"
+            "footer footer footer footer";
+        }
+        span {
+          display: block;
+        }
+      }
+      @media only screen and (min-width: 500px) and (max-width: 800px) {
+        body {
+          background-color: yellow;
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section aside"
+            "footer footer footer footer";
+        }
+      }
+      @media (min-width: 800px) {
+        body {
+          background-color: blue;
+        }
+        .container {
+          grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        aside {
+          display: none;
+        }
+      }
+
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "nav nav nav nav"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      .bdr {
+        border: 2px solid black;
+        padding: 15px;
+        background-color: bisque;
+      }
+      .item {
+        padding: 7px;
+        margin: 5px;
+      }
+      nav {
+        grid-area: nav;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="bdr">
+        <span class="item">Home</span>
+        <span class="item">About</span>
+        <span class="item">Service</span>
+        <span class="item">Contact us</span>
+      </nav>
+      <section class="bdr">
+        <h2>Blog</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam
+          iste, ab, praesentium ullam suscipit quae tenetur voluptates
+          dignissimos voluptas earum doloremque perferendis porro hic autem
+          totam veniam at assumenda accusamus modi.
+        </p>
+      </section>
+
+      <aside class="bdr">
+        <h4>Gallery</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+          laboriosam harum amet.
+        </p>
+      </aside>
+      <footer class="bdr">
+        <p>Copyright c Ayesha 2022</p>
+      </footer>
+    </div>
+  </body>
+</html>

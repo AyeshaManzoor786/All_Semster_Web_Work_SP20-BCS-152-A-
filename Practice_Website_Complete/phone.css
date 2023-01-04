@@ -1,0 +1,54 @@
+body {
+  background-color: aqua;
+}
+#navbar {
+  /* overflow: hidden; */
+  flex-direction: column;
+}
+#navbar #logo {
+  margin: 5px 5px;
+}
+
+#navbar #logo img {
+  width: 80px;
+  height: 60px;
+  margin: 5px 5px;
+}
+#home {
+  height: 500px;
+}
+#home::before {
+  height: 500px;
+}
+
+#services {
+  flex-direction: column;
+}
+#services .box {
+}
+#client-section {
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+#contact {
+}
+
+footer {
+}
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 18px;
+  padding: 8px;
+}
+.h-second {
+  font-family: "Bree Serif", serif;
+  font-size: 1rem;
+  padding: 8px;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  text-align: start;
+  font-family: "Libre Franklin", sans-serif;
+}

@@ -1,0 +1,272 @@
+
+body{
+    margin: 50px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height:1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0, 0, 0.1)
+}
+
+.container .left-div{
+    position: relative;
+    background-color: rgb(26, 24, 24);
+    padding: 40px;
+  
+    
+}
+.container .right-div{
+    position: relative;
+    background-color: rgb(233, 229, 229);
+    padding: 40px;
+}
+.name{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 60px;
+   margin-bottom: 20px;
+   
+}
+.name .img-div{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.name .img-div img{
+   position:absolute;
+   width: 100%;
+   height: 100%;
+  object-fit: cover;
+   border: 2px solid darkorange;
+}
+.name-div .h2{
+    color: darkorange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 5px;
+    
+} 
+.name-div .para{
+    color: darkorange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: center;
+}
+#small-div{
+    background-color: rgb(8, 8, 8);
+    color: darkorange;
+     border-radius: 20px;
+     height: 40px;
+     margin-bottom: 10px;
+     
+   
+}
+#small-div .h3{
+    padding: 12px;
+    align-items: center;
+     justify-content: center;
+}
+
+hr{
+    border: 1px solid rgb(107, 61, 5);
+    float: right;
+    width:50%;   
+}
+
+.contact{
+    color: white;
+}
+.contact ul{
+    position: relative;
+}
+.contact ul li{
+    list-style: none;
+    position: relative;
+    margin:10px 0;
+    cursor: pointer;
+}
+
+.contact ul li .icon{
+    display: inline-block;
+    font-size: 20px;
+    color: orange;
+    width: 30px;
+
+}
+
+.p{
+    color: white;
+}
+.education ul li{
+    margin-bottom: 12px;
+
+}
+.education ul li h4{
+   font-weight: 400px;
+}
+.language{
+    color: white;
+}
+.language ul li{
+    list-style: none;
+}
+
+.language .prcnt{
+    width: 100%;
+    height: 8px;
+    position: relative;
+    background-color: rgb(7, 4, 4);
+    display: block;
+    margin-top: 6px;
+}
+.language .prcnt div{
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    background-color: darkorange;
+}
+h2{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(104, 59, 5);
+}
+.about-div{
+    margin-bottom: 50px;
+
+}
+.about-div:last-child{
+    margin-bottom: 0;
+    
+}
+.about .sub-box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px ;
+}
+.about .sub-box .year{
+   min-width: 120px;
+}
+.about .sub-box .year h5{
+    font-weight: 700px;
+    text-transform:uppercase ;
+    color: rgb(54, 51, 51);
+    
+ }
+
+.about .sub-box .work-text h4{
+   text-transform: uppercase;
+   color: rgb(119, 81, 9);
+   font-size: 18px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+}
+.skill{
+    color: white;
+    width: 250px;
+}
+.skill li{
+    list-style: none;
+    margin-bottom: 5px;
+
+}
+.skill li .fa{
+    margin-left: 5px;
+
+}
+.hobby{
+    color: white;
+}
+.hobby ul {
+ display: grid;
+ grid-template-columns: repeat(1,1fr);
+}
+.hobby ul li{
+    list-style: none;
+    color: white;
+    font-weight: 500px;
+    margin:10px 0;
+}
+.hobby ul li .fa{
+    color: darkorange;
+    font-size: 20px;
+    width: 20px;
+    margin-left: 15px;
+}
+.checked {
+    color: orange;
+  }
+.name-div{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 23, 23);
+    color: darkorange;
+    border: 2px solid rgb(194, 128, 6);
+   
+}
+.certificate{
+    color: white;
+}
+.work-text p{
+    position: relative;
+    border-left: 1px solid rgb(126, 74, 11);
+    padding-left: 2rem;
+}
+
+.education .sub-box .year{
+    position: relative;
+    border-left: 1px solid rgb(126, 74, 11);
+    padding-left: 1rem;
+}
+.education .sub-box .year::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left:0;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(92, 53, 6);
+  border-radius: 50%;
+  border: 1px solid rgb(197, 113, 11);
+}
+
+.education .sub-box .year h3{
+  color: rgb(143, 82, 7);
+}
+.education .sub-box .year h4{
+   font-size: 14x;
+   color: rgb(49, 49, 49);
+  }
+  .certificate .fa{
+    color: darkorange;
+    font-size: 20px;
+    width: 20px;
+    margin-right:10px;
+  }
+
+
+  
+
+
+  

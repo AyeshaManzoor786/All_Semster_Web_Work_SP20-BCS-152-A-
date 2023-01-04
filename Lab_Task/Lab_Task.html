@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab Task xD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Task</h1>
+    <!-- <input type="text" placeholder="name here" value="" /> <br /> -->
+    <input class="input" type="email" placeholder="email here" value="" />
+    <br />
+    <button class="submit">Submit</button>
+  </body>
+  <script>
+    // function change() {
+    //   if (document.querySelector(".input").value == "") {
+    //     document.querySelector(".input").style.border = "2px solid red";
+    //   } else {
+    //     document.querySelector(".input").style.border = "";
+    //   }
+    // }
+
+
+
+
+    
+    $(".submit").click(() => {
+      if ($(".input").val() == "") {
+        $(".input").css("border", "2px solid red");
+      } else {
+        $(".input").css("border", "");
+      }
+    });
+  </script>
+</html>

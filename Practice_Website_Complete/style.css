@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ----------NavBar----------------- */
+#navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar #logo {
+  margin: 10px 5px;
+}
+
+#navbar #logo img {
+  width: 100px;
+  height: 80px;
+  margin: 10px 5px;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 3px 22px;
+  color: white;
+}
+#navbar ul li a:hover {
+  background-color: black;
+  color: white;
+}
+/* ---------------------------------section part------------------- */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 220px;
+  height: 600px;
+}
+/* we give the background image through pesudo selector before */
+#home::before {
+  content: "";
+  background: url("4.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  text-align: start;
+  font-family: "Libre Franklin", sans-serif;
+}
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid red;
+  padding: 20px;
+  margin: 3px 10px;
+  border-radius: 28px;
+  background-color: rgb(244, 221, 221);
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+/* ---------------------Client Section------------------- */
+#client-section {
+  height: 400px;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url(3.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  padding: 34px;
+}
+.client-item img {
+  height: 130px;
+}
+/* ---------------------------Contact Section--------------------- */
+#contact {
+  position: relative;
+  height: 600px;
+}
+#contact::before {
+  content: "";
+  background: url("1.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  position: absolute;
+}
+#contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.contact-form form {
+  width: 40%;
+}
+.contact-form label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+/* ---------------------CopyRight----------- */
+footer {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* -----------------------Primary Classes----------------------- */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-second {
+  font-family: "Bree Serif", serif;
+  font-size: 2rem;
+  padding: 12px;
+}
+.center {
+  text-align: center;
+}
+/* brimary button style */
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(10, 84, 84);
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}

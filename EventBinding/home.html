@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Binding</title>
+    <script src="home.js"></script>
+  </head>
+  <body>
+    <button
+      onclick="btn()"
+      onmouseover="console.log('mouse over')"
+      onmouseout="console.log('Mouse left')"
+    >
+      Click Me
+    </button>
+    <!-- -----------Output name sir vedio------- -->
+    <!-- <h4>Enter your Name:</h4>
+    <input type="text" id="input1" />
+    <button id="button1" onclick="btn()">Update Data</button>
+    <button id="button2">Check Binding</button>
+    <span id="span1">Your result will show here!</span> -->
+
+    <!-- --------------------------Binding of one button with another button--------------------------- -->
+    <!-- <button id="addBtn">Click me</button> -->
+    <!-- <button onclick="btn()">Binding</button> -->
+
+    <!-- --------------------------------------TODO List  sir vedio  in JS------------------- -->
+    <input type="text" id="todo" />
+    <button id="btn">Add new TODO</button>
+    <ul id="todos">
+      <li>
+        Wash your Hand
+        <button id="btn1" onclick="HandleDelete(event)">Delete</button>
+      </li>
+      <li>
+        Go to Bazaar
+        <button id="btn1" onclick="HandleDelete(event)">Delete</button>
+      </li>
+      <li>
+        Buy the Milk
+        <button id="btn1" onclick="HandleDelete(event)">Delete</button>
+      </li>
+      <li>
+        Feed the Cat
+        <button id="btn1" onclick="HandleDelete(event)">Delete</button>
+      </li>
+    </ul>
+  </body>
+</html>
