@@ -1,0 +1,12 @@
+.homeH1 {
+  color: black;
+  background-color: cyan;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.para {
+  border: 2px solid black;
+  text-align: center;
+}
