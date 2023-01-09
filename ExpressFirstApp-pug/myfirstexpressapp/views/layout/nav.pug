@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title First pug
+        link(rel="stylesheet", href="stylesheets/style.css")
+    body
+    h4  Menu Bar will display here 
+    ul#topMenu 
+        li 
+            a(href="/") Home Page 
+        li
+            a(href="/contact") Contact Page 
+        li
+            a(href="/product") Products Page 
+    hr
+    hr
+    block   content 
+    hr
+    hr
+    
+    h4  Footer will display here
+    block footer
+    //- p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt at rem, odit perspiciatis sit, recusandae vel voluptatum autem aspernatur amet molestiae fuga sint ducimus inventore quod rerum? Alias, distinctio tempora!
